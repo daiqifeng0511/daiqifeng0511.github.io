@@ -98,20 +98,22 @@ header-img: "img/post-bg-rwd.jpg"
 
 <!-- Gitalk 评论 start  -->
 {% if site.gitalk.enable %}
-<!-- Gitalk link  -->
+<!-- Link Gitalk 的支持文件  -->
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
     <script type="text/javascript">
     var gitalk = new Gitalk({
-    clientID: '{{site.gitalk.clientID}}',
-    clientSecret: '{{site.gitalk.clientSecret}}',
-    repo: '{{site.gitalk.repo}}',
-    owner: '{{site.gitalk.owner}}',
-    admin: ['{{site.gitalk.admin}}'],
-    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-    id: 'about',
+
+    // gitalk的主要参数
+        clientID: `4ff46a9387cd1d3a3011`,
+        clientSecret: `48a168ad28c77f2a5d7783066b9009250e890040`,
+        repo: `daiqifeng0511.github.io`,
+        owner: 'daiqifeng0511',
+        admin: ['daiqifeng0511'],
+        id: '文章示例',
+    
     });
     gitalk.render('gitalk-container');
 </script>
